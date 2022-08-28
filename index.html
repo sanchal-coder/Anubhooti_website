@@ -1,313 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compaitable" content="ie=edge" />
+    <link rel="stylesheet" href="./css/final.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <title>Anubhooti</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compaitable" content="ie=edge" />
-  <link rel="stylesheet" href="./css/final.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Tinos&display=swap" rel="stylesheet">
-  <title>Anubhooti</title>
-
-<body>
-  <nav class="bg-main p-4">
-    <div class="flex items-center justify-between">
-      <div>
-        <img class="h-15 inline" src="./images/Group.png" />
-      </div>
-      <div class="hidden md:flex space-x-12">
-        <a href="#">Home </a>
-        <a href="#">About Us </a>
-        <a href="#">Works </a>
-        <a href="#">Services </a>
-        <a class="pr-12" href="#">Contact Us</a>
-      </div>
-      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-
-
-      </button>
-    </div>
-
-    <div class="  flex-col items-center self-end hidden py-8  space-6- font-bold
-         bg-main sm:w-auto sm:self-center space-y-4 left-6
-         right-6 " id="menu">
-      <a href="#hero">Home </a>
-      <a href="#about-us">About Us </a>
-      <a href="#works">Works </a>
-      <a href="#services">Services </a>
-      <a href="#contact-us">Contact Us
-      </a>
-
-
-    </div>
-  </nav>
-  <section id="hero">
-    <div class=" flex flex-row relative">
-      <div><img src="./images/image 1.png" alt="" /></div>
-      <div class="absolute top-36 font-bold  px-5">
-        <p class="text-white font-lora   text-3xl">
-          A student-run,non-governmental orgnization.
-        </p>
-        <button
-          class=" bg-sky rounded-md font-semibold border-2 px-3 mt-6  text-white hover:text-black hover:bg-white hover:border-white text-base py-2">
-          KNOW MORE </button>
-      </div>
-    </div>
-  </section>
-
-  <section id="about-us">
-    <div class="flex flex-col items-center mt-9 ">
-      <div class="mb-4"> <img src="./images/image 2.png" alt="" />
-      </div>
-
-      <div class="flex flex-col items-center ">
-        <div class="flex mb-12">
-          <h1 class="font-lora text-xl">ABOUT US</h1>
-        </div>
-      </div>
-      <div class="flex flex-col">
-        <div class=" whitespace-nowrap ml-3">
-          <h1 class="font-lora text-lg">MISSION & VISION </h1>
-        </div>
-
-        <div class=" pb-4 px-3">
-          <p class=" font-Tinos text-left">
-            <br>
-            Anubhooti is a student-run Non-Governmental Organization. 
-            The journey from 9 core members to
-            a family of 70, has been amazing. Fuelled by a desire
-            to reform the world and t0 help the underprivileged
-            sections of society in whatever way we can, this journey
-            has indeed been an inclusive and accommodating one.
-            Anubhooti aims to impart tinges of unadulterated happiness
-            to those who are struggling with the pathos of life a bit too much.
-            By saving portions of our pocket money and by organizing
-            crowdfunding sessions simultaneously, Anubhooti tries to
-            empower people and encourage them to survive their own
-            battles more valiantly
-
-
-          </p>
-        </div>
-      </div>
-
-
-  </section>
-
-
-  <section id="works">
-
-    <div class="bg-secondary mt-2">
-      <div class="flex flex-col items-center ">
-        <div class="mt-5">
-          <h1 class="font-lora text-xl">OUR WORKS</h1>
-        </div>
-      </div>
-
-    </div>
-
-
-
-
-
-  </section>
-
-  <!-- Implement the carousel -->
-  <div class="relative flex flex-col items-center mx-auto bg-secondary p-6">
-    <div class="slide w-[251px] relative ">
-      <img class="  object-cover" src="./images/Mask Group.png">
-      <div class="absolute bottom-0 w-[251px] px-5 py-3 bg-black/40 text-center font-Tinos text-lg text-white">For The Underprivileged
-      </div>
-    </div>
-
-    <div class="slide relative">
-      <img class=" h-[300px] object-cover" src="./images/Mask group.png">
-      <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center font-Tinos text-lg text-white">For Children</div>
-    </div>
-
-    <div class="slide relative">
-      <img class=" h-[300px] object-cover" src="./images/photo_2022-02-01_21-31-26 2.png">
-      <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center font-Tinos text-lg text-white">For Homeless
-      </div>
-    </div>
-
-    <!-- The previous button -->
-    <a class="absolute left-10 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-      onclick="moveSlide(-1)">❮</a>
-
-    <!-- The next button -->
-    <a class="absolute right-9 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-      onclick="moveSlide(1)">❯</a>
-
-  </div>
-  <br>
-
-  <!-- The dots -->
-  <div class="flex justify-center items-center space-x-5">
-    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
-    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
-    <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
-  </div>
-
-  <!-- Services Section -->
-  <section id="services">
-    <div style="background: linear-gradient(180deg, rgba(207,143,122,1) 80%, rgba(255,255,255,1) 80%);"
-      class="flex flex-col mt-3  items-center bg-gradient-to-b">
-      <div class="mt-7 whitespace-nowrap font-lora text-xl">OUR SERVICES</div>
-      <div class="w-64 bg-white mt-7 rounded-3xl overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-          <div class="font-bold  flex flex-col items-center text-xl mb-2 ">
-            <div> MEDICAL </div>
-            <div>FACILITIES </div>
+    <body>
+      <nav class="bg-main p-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="h-15 inline" src="./images/Group.png" />
           </div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
-            eaque, exercitationem praesentium nihil.
-          </p>
+          <div class="hidden md:flex space-x-12">
+            <a href="#">Home </a>
+            <a href="#">About Us </a>
+            <a href="#">Works </a>
+            <a href="#">Services </a>
+            <a class="pr-12" href="#">Contact Us</a>
+          </div>
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
         </div>
-        <div class="px-6 pt-4 pb-2">
-          <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
+        <div
+          class="flex-col items-center self-end hidden py-8 space-6- font-bold bg-main sm:w-auto sm:self-center space-y-4 left-6 right-6"
+          id="menu"
+        >
+          <a href="#hero">Home </a>
+          <a href="#about-us">About Us </a>
+          <a href="#works">Works </a>
+          <a href="#services">Services </a>
+          <a href="#contact-us">Contact Us </a>
         </div>
+      </nav>
+      <section id="hero">
+        <div class="flex flex-row relative">
+          <div><img src="./images/image 1.png" alt="" /></div>
+          <div class="absolute top-36 font-bold px-5">
+            <p class="text-white font-lora text-3xl">
+              A student-run,non-governmental orgnization.
+            </p>
+            <button
+              class="bg-sky rounded-md font-semibold border-2 px-3 mt-6 text-white hover:text-black hover:bg-white hover:border-white text-base py-2"
+            >
+              KNOW MORE
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-us">
+        <div class="flex flex-col items-center mt-9">
+          <div class="mb-4"><img src="./images/image 2.png" alt="" /></div>
+
+          <div class="flex flex-col items-center">
+            <div class="flex mb-12">
+              <h1 class="font-lora text-xl">ABOUT US</h1>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="whitespace-nowrap ml-3">
+              <h1 class="font-lora text-lg">MISSION & VISION</h1>
+            </div>
+
+            <div class="pb-4 px-3">
+              <p class="font-Tinos text-left">
+                <br />
+                Anubhooti is a student-run Non-Governmental Organization. The
+                journey from 9 core members to a family of 70, has been amazing.
+                Fuelled by a desire to reform the world and t0 help the
+                underprivileged sections of society in whatever way we can, this
+                journey has indeed been an inclusive and accommodating one.
+                Anubhooti aims to impart tinges of unadulterated happiness to
+                those who are struggling with the pathos of life a bit too much.
+                By saving portions of our pocket money and by organizing
+                crowdfunding sessions simultaneously, Anubhooti tries to empower
+                people and encourage them to survive their own battles more
+                valiantly
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works">
+        <div class="bg-secondary mt-2">
+          <div class="flex flex-col items-center">
+            <div class="mt-5">
+              <h1 class="font-lora text-xl">OUR WORKS</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implement the carousel -->
+      <div class="relative flex flex-col items-center mx-auto bg-secondary p-6">
+        <div class="slide w-[251px] relative">
+          <img class="object-cover" src="./images/Mask Group.png" />
+          <div
+            class="absolute bottom-0 w-[251px] px-5 py-3 bg-black/40 text-center font-Tinos text-lg text-white"
+          >
+            For The Underprivileged
+          </div>
+        </div>
+
+        <div class="slide relative">
+          <img class="h-[300px] object-cover" src="./images/Mask group.png" />
+          <div
+            class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center font-Tinos text-lg text-white"
+          >
+            For Children
+          </div>
+        </div>
+
+        <div class="slide relative">
+          <img
+            class="h-[300px] object-cover"
+            src="./images/photo_2022-02-01_21-31-26 2.png"
+          />
+          <div
+            class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center font-Tinos text-lg text-white"
+          >
+            For Homeless
+          </div>
+        </div>
+
+        <!-- The previous button -->
+        <a
+          class="absolute left-10 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(-1)"
+          >❮</a
+        >
+
+        <!-- The next button -->
+        <a
+          class="absolute right-9 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(1)"
+          >❯</a
+        >
+      </div>
+      <br />
+
+      <!-- The dots -->
+      <div class="flex justify-center items-center space-x-5">
+        <div
+          class="dot w-4 h-4 rounded-full cursor-pointer"
+          onclick="currentSlide(1)"
+        ></div>
+        <div
+          class="dot w-4 h-4 rounded-full cursor-pointer"
+          onclick="currentSlide(2)"
+        ></div>
+        <div
+          class="dot w-4 h-4 rounded-full cursor-pointer"
+          onclick="currentSlide(3)"
+        ></div>
       </div>
 
-
-      <!-- NON-MEDICAL CARD -->
-
-      <div class="w-64 bg-white mt-7 rounded-3xl overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-          <div class="font-bold  flex flex-col items-center text-xl mb-2 ">
-            <div> NON-MEDICAL </div>
-            <div>FACILITIES </div>
+      <!-- Services Section -->
+      <section id="services">
+        <div
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(207, 143, 122, 1) 80%,
+              rgba(255, 255, 255, 1) 80%
+            );
+          "
+          class="flex flex-col mt-3 items-center bg-gradient-to-b"
+        >
+          <div class="mt-7 whitespace-nowrap font-lora text-xl">
+            OUR SERVICES
+          </div>
+          <div class="w-64 bg-white mt-7 rounded-3xl overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+              <div class="font-bold flex flex-col items-center text-xl mb-2">
+                <div>MEDICAL</div>
+                <div>FACILITIES</div>
+              </div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#winter</span
+              >
+            </div>
           </div>
 
+          <!-- NON-MEDICAL CARD -->
+
+          <div class="w-64 bg-white mt-7 rounded-3xl overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+              <div class="font-bold flex flex-col items-center text-xl mb-2">
+                <div>NON-MEDICAL</div>
+                <div>FACILITIES</div>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <ul>
+                <li>
+                  <a
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
+                    href="https://wa.me/919830006742?text=I+would+like+to+know+more+about+the+short+term+service"
+                  >
+                    Short Term Stay</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
+                    href="https://wa.me/919830006742"
+                  >
+                    Companion Care</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
+                    href="https://wa.me/919830006742"
+                  >
+                    Safety and Security</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
+                    href="https://wa.me/919830006742"
+                  >
+                    Senior Travel Assistance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
+                    href="https://wa.me/919830006742"
+                  >
+                    Senior Event Assistance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2 whitespace-nowrap"
+                    href="https://wa.me/919830006742"
+                  >
+                    Recreation And Entertainment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2 whitespace-nowrap"
+                    href="https://wa.me/919830006742"
+                  >
+                    Lifestyle and Emotional Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="px-6  pt-4 pb-2">
-          <ul>
-            <li> <a
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
-                href="https://wa.me/919830006742?text=I+would+like+to+know+more+about+the+short+term+service"> Short
-                Term Stay</a></li>
-            <li> <a
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos  text-gray-700 mr-2 mb-2"
-                href="https://wa.me/919830006742"> Companion Care</a></li>
-            <li> <a
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
-                href="https://wa.me/919830006742"> Safety and Security</a></li>
-            <li> <a
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
-                href="https://wa.me/919830006742"> Senior Travel Assistance</a></li>
-            <li> <a
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2"
-                href="https://wa.me/919830006742"> Senior Event Assistance</a></li>
-            <li> <a
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2 whitespace-nowrap"
-                href="https://wa.me/919830006742"> Recreation And Entertainment</a></li>
-            <li> <a
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold font-Tinos text-gray-700 mr-2 mb-2 whitespace-nowrap"
-                href="https://wa.me/919830006742"> Lifestyle and Emotional Support</a></li>
-          </ul>
+      </section>
+
+      <!-- Footer -->
+      <section id="contact-us">
+        <div class="flex flex-col space-y-11 space-x-2 pb-14 mt-64 bg-footer">
+          <a class="text-white font-bold text-lg ml-2 mt-3">Links</a>
+
+          <div>
+            <a class="text-white font-bold text-lg">
+              <hr class="w-5/6" />
+              Stay Tuned
+            </a>
+            <p class="text-slate-100 font text-sm">
+              Connect with us and <br />
+              stay in the loop
+            </p>
+          </div>
+          <div>
+            <a class="text-white font-bold text-lg">
+              <hr class="w-5/6" />
+              Email Updates
+            </a>
+            <p class="text-slate-100 font text-sm">
+              Be the first to hear about our new <br />announcements
+            </p>
+          </div>
+          <div>
+            <a class="text-white font-bold text-lg">
+              <hr class="w-5/6" />
+              Contact Us
+            </a>
+            <p class="text-slate-100 font text-sm">
+              Questions? We’ve got<br />
+              answers. Try us.
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
+      <!-- Javascript code -->
+      <script>
+        // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
 
-  <!-- Footer -->
-  <section id="contact-us">
-    <div class="flex flex-col space-y-11  space-x-2 pb-14 mt-64  bg-footer">
+        // change slide with the prev/next button
+        function moveSlide(moveStep) {
+          showSlide((slideIndex += moveStep));
+        }
 
-      <a class="text-white font-bold text-lg ml-2 mt-3">Links</a>
+        // change slide with the dots
+        function currentSlide(n) {
+          showSlide((slideIndex = n));
+        }
 
-      <div><a class="text-white font-bold text-lg">
-          <hr class="w-5/6 ">Stay Tuned
-        </a>
-        <p class="text-slate-100 font text-sm">Connect with us and <br> stay in the loop</p>
-      </div>
-      <div> <a class="text-white font-bold text-lg">
-          <hr class="w-5/6 ">Email Updates
-        </a>
-        <p class="text-slate-100 font text-sm">Be the first to hear about our new <br>announcements</p>
-      </div>
-      <div> <a class="text-white font-bold text-lg">
-          <hr class="w-5/6 ">Contact Us
-        </a>
-        <p class="text-slate-100 font text-sm">Questions? We’ve got<br> answers. Try us. </p>
-      </div>
-    </div>
+        function showSlide(n) {
+          let i;
+          const slides = document.getElementsByClassName("slide");
+          const dots = document.getElementsByClassName("dot");
 
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
 
-  </section>
+          // hide all slides
+          for (i = 0; i < slides.length; i++) {
+            slides[i].classList.add("hidden");
+          }
 
+          // remove active status from all dots
+          for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("bg-orange-300");
+            dots[i].classList.add("bg-blue-300");
+          }
 
+          // show the active slide
+          slides[slideIndex - 1].classList.remove("hidden");
 
-  <!-- Javascript code -->
-  <script>
-    // set the default active slide to the first one
-    let slideIndex = 1;
-    showSlide(slideIndex);
+          // highlight the active dot
+          dots[slideIndex - 1].classList.remove("bg-blue-300");
+          dots[slideIndex - 1].classList.add("bg-orange-300");
+        }
 
-    // change slide with the prev/next button
-    function moveSlide(moveStep) {
-      showSlide(slideIndex += moveStep);
-    }
+        /* hamburger menu */
+        const btn = document.getElementById("menu-btn");
+        const nav = document.getElementById("menu");
 
-    // change slide with the dots
-    function currentSlide(n) {
-      showSlide(slideIndex = n);
-    }
-
-    function showSlide(n) {
-      let i;
-      const slides = document.getElementsByClassName("slide");
-      const dots = document.getElementsByClassName('dot');
-
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-
-      // hide all slides
-      for (i = 0; i < slides.length; i++) {
-        slides[i].classList.add('hidden');
-      }
-
-      // remove active status from all dots
-      for (i = 0; i < dots.length; i++) {
-        dots[i].classList.remove('bg-orange-300');
-        dots[i].classList.add('bg-blue-300');
-      }
-
-      // show the active slide
-      slides[slideIndex - 1].classList.remove('hidden');
-
-      // highlight the active dot
-      dots[slideIndex - 1].classList.remove('bg-blue-300');
-      dots[slideIndex - 1].classList.add('bg-orange-300');
-    }
-
-
-    /* hamburger menu */
-    const btn = document.getElementById('menu-btn')
-    const nav = document.getElementById('menu')
-
-
-    btn.addEventListener('click', () => {
-      btn.classList.toggle('open')
-      nav.classList.toggle('flex')
-      nav.classList.toggle('hidden')
-
-    })
-
-  </script>
-</body>
-</head>
-
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("open");
+          nav.classList.toggle("flex");
+          nav.classList.toggle("hidden");
+        });
+      </script>
+    </body>
+  </head>
 </html>
